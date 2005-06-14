@@ -1,4 +1,5 @@
 Summary:	Madman Administrates Digital Music Archives Neatly
+Summary(pl):	Madman - mi³e administrowanie archiwami cyfrowej muzyki
 Name:		madman
 Version:	0.93
 Release:	0.1
@@ -8,15 +9,15 @@ Source0:	http://dl.sourceforge.net/madman/%{name}-%{version}.tar.gz
 # Source0-md5:	a9aeef95248ecd55e0479a6b8dec43f2
 #Source1:	%{name}.desktop
 #Source1:	kdissert-kde.py
-URL:		http://madman.sourceforge.net
+URL:		http://madman.sourceforge.net/
 #BuildRequires:	autoconf
 #BuildRequires:	automake
 #BuildRequires:	kdelibs-devel >= 9:3.2.0
-BuildRequires:	rpmbuild(macros) >= 1.129
-BuildRequires:	scons
-BuildRequires:	qt-devel >= 6:3.1
-BuildRequires:	libvorbis-devel >= 1:1.0
 BuildRequires:	libid3tag-devel >= 0.15.1b
+BuildRequires:	libvorbis-devel >= 1:1.0
+BuildRequires:	rpmbuild(macros) >= 1.129
+BuildRequires:	qt-devel >= 6:3.1
+BuildRequires:	scons
 BuildRequires:	xmms-devel >= 2:1.2.6
 #BuildRequires:	unsermake >= 040805
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -27,8 +28,12 @@ your music database organized and tidy, and it helps you listen to
 better music, be happier, brighten your teeth and quickly restore
 world peace.
 
-
 %description -l pl
+Madman (Madman Administrates Digital Music Archives Neatly) to
+aplikacja do zarz±dzania muzyk± pozwalaj±ca ³atwo utrzymywaæ w
+porz±dku bazê danych muzyki i pomagaj±ca w s³uchaniu lepszej muzyki,
+byciu szczê¶liwszym, wybieleniu zêbów i szybkiemu przywróceniu
+pokoju na ¶wiecie.
 
 %prep
 %setup -q
@@ -49,7 +54,6 @@ scons configure \
 	qtlibs=%{_libdir}
 scons
 
-
 #cp -f /usr/share/automake/config.sub admin
 #export PATH=/usr/share/unsermake:$PATH
 #%{__make} -f admin/Makefile.common cvs
@@ -67,6 +71,7 @@ scons
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 scons prefix=$RPM_BUILD_ROOT%{_prefix} install
 
 #install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_desktopdir}}
