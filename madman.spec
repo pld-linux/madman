@@ -1,5 +1,5 @@
 Summary:	Madman Administrates Digital Music Archives Neatly
-Summary(pl):	Madman - mi³e administrowanie archiwami cyfrowej muzyki
+Summary(pl.UTF-8):   Madman - miÅ‚e administrowanie archiwami cyfrowej muzyki
 Name:		madman
 Version:	0.93
 Release:	0.1
@@ -28,12 +28,12 @@ your music database organized and tidy, and it helps you listen to
 better music, be happier, brighten your teeth and quickly restore
 world peace.
 
-%description -l pl
+%description -l pl.UTF-8
 Madman (Madman Administrates Digital Music Archives Neatly) to
-aplikacja do zarz±dzania muzyk± pozwalaj±ca ³atwo utrzymywaæ w
-porz±dku bazê danych muzyki i pomagaj±ca w s³uchaniu lepszej muzyki,
-byciu szczê¶liwszym, wybieleniu zêbów i szybkiemu przywróceniu
-pokoju na ¶wiecie.
+aplikacja do zarzÄ…dzania muzykÄ… pozwalajÄ…ca Å‚atwo utrzymywaÄ‡ w
+porzÄ…dku bazÄ™ danych muzyki i pomagajÄ…ca w sÅ‚uchaniu lepszej muzyki,
+byciu szczÄ™Å›liwszym, wybieleniu zÄ™bÃ³w i szybkiemu przywrÃ³ceniu
+pokoju na Å›wiecie.
 
 %prep
 %setup -q
